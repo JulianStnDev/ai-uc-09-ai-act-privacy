@@ -13,3 +13,16 @@ Kein Modell, keine API-Kosten. Der „Datensatz“ ist der aufgezeichnete Lauf T
 Erzeugt mit `scripts/t01_anfragen.py`, Inhalt in [t01_anfragen.md](t01_anfragen.md). Markiert werden die bekannten Werte des Kunden K001. Der Freitext ist zusätzlich als Ganzes personenbezogen.
 
 Stationen mit personenbezogenen Daten: 11. Davon ohne Zusage eines EU-Standorts: 5 (Anthropic Agent, Judge und Neuschreiben mit Speicherung in den USA; Cloud Logging am Ort „global“; Replay im öffentlichen GitHub-Repo). Details: [docs/DATENFLUSS.md](../docs/DATENFLUSS.md).
+
+## Schritt 2 und 3: Einstufung und Backlog (2026-10-08)
+
+Keine API-Kosten. Ergebnis der Einstufung: begrenztes Risiko mit Transparenzpflichten (Art. 50(1), 50(2)) und KI-Kompetenz (Art. 4). Keine Verbote, kein Hochrisiko ([docs/AI_ACT.md](../docs/AI_ACT.md)).
+
+| Backlog | Anzahl |
+|---|---|
+| Einträge gesamt | 28 |
+| vor dem Go-live („ja“ oder „ja*“) | 19 (3 davon „ja*“) |
+| heute erfüllt / teilweise / fehlt / nicht gebaut | 0 / 8 / 19 / 1 |
+| Punkte „mit Legal klären“ | 4 (AI Act) + 7 (DSGVO) |
+
+Gezählt aus [docs/BACKLOG.md](../docs/BACKLOG.md).

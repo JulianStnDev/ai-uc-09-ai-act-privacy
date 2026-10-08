@@ -36,3 +36,20 @@ Begründung: Die Einstufung braucht als Grundlage, welche personenbezogenen Date
 - **Personenbezug:** Name, E-Mail, Kunden-ID, Konto- und Zahlungsdaten werden einzeln markiert. Freitext, Entwürfe und Antworten zählen als Ganzes, weil sie sich auf eine Person beziehen. Pseudonyme (Kunden-ID, Link-Code) bleiben personenbezogen.
 - **Primärquellen:** nur Seiten der Anbieter selbst. Bei Neon zählen die Databricks-Seiten mit, weil `neon.com/dpa` und `neon.com/subprocessors` dorthin weiterleiten. Widersprüche zwischen zwei Anbieterseiten werden genannt, nicht aufgelöst.
 - **Logs:** Abfragen nur zählend. IP-Adressen und Link-Codes kommen nicht ins Repo.
+
+## 2026-10-08: Einstufung und Pflichten als Vorlage für Legal, nicht als Entscheidung
+
+Kontext: Schritt 2 und 3 ordnen den Agent nach AI Act und DSGVO ein. Mehrere Fragen haben keine eindeutige Antwort in Gesetz oder Leitlinien (Art. 22 bei begünstigenden Entscheidungen, Art. 50(1) bei asynchronem Ticketportal, Erforderlichkeit eines LLM für Art. 6(1)(b), Handelsbrief-Eigenschaft von Support-Korrespondenz).
+
+Optionen: (a) jede Frage selbst entscheiden, (b) einschätzen und offene Auslegungen als „mit Legal klären“ markieren.
+
+Entscheidung: (b). Keine Rechtsberatung. Die Vorlage plant im Zweifel die vorsichtigere Variante in den Backlog ein (z. B. KI-Hinweis auch im asynchronen Portal, Ablehnungen über die Konsole) und kennzeichnet das mit „ja*“.
+
+Begründung: Eine Produktvorlage soll zeigen, was zu tun ist und wo eine Auslegung fehlt. Entscheiden muss jemand mit Mandat.
+
+## 2026-10-08: Quellenregeln für Schritt 2 und 3
+
+- **Nur Primärquellen:** EUR-Lex (Gesetzestexte, Beschlüsse, EuGH), Kommission und AI Office, EDPB / Art.-29-Gruppe, deutsche Aufsichtsbehörden (DSK), gesetze-im-internet.de.
+- **Selbst am Original geprüft** werden die tragenden Aussagen: Omnibus (Datum, Inkrafttreten 27.7.2026, Art. 4, Art. 113, Art. 111(4)), HGB §257 Abs. 4, DSK-Muss-Liste Nr. 11. Die übrigen Zitate stammen aus Recherche-Abrufen derselben Quellen und sind so gekennzeichnet.
+- **Entwürfe als Entwurf:** Die Leitlinien zu Art. 6 (Hochrisiko) gibt es nur als Entwurf vom 19.5.2026. Sie werden als Indiz zitiert, nicht als Beleg.
+- **Korrektur:** Buchungsbelege sind nach geltendem HGB/AO 8 Jahre aufzubewahren, nicht 10.

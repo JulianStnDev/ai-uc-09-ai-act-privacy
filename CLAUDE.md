@@ -1,7 +1,18 @@
 # Projekt-Kontext
 
 ## Problem
-[Wird hier näher beschrieben, sobald das Use-Case-Repo konkret wird]
+Entscheidungs- und Pflichtenvorlage, kein Produktcode: Was muss gelten, damit der UC7-Support-Agent ab morgen echte Kundentickets bearbeiten darf (DSGVO, später AI Act)? Erster Schritt: Datenfluss-Inventur ohne API (docs/DATENFLUSS.md, docs/DATENMINIMIERUNG.md). Die AI-Act-Einstufung kommt erst in einem späteren Schritt.
+
+Datenquellen (Nachbar-Repos unter `~/dev`, nur lesen, nie ändern):
+- `ai-uc-07-deployment`: Code der Web-App und des Agents (`app/`, `uc4_agent/`), Aufzeichnung T01 (`app/replay/aufzeichnung.json`), Protokoll in Neon (`DATABASE_URL` aus dessen `.env`, nur Read-only-Transaktionen)
+- Cloud Run / Cloud Logging: Projekt `focusflow-demo-510014`, Dienst `uc7`, nur lesend (`gcloud logging read`, `... describe`); Log-Werte mit IP-Adressen oder Link-Codes nie ins Repo schreiben
+- Lokale CLI-Protokolle unter `~/.claude/projects/` nur als Beleg zitieren, nicht kopieren
+
+Regeln:
+- Jede Aussage über den Code mit Datei und Zeile (Commit nennen).
+- Anbieterangaben (Anthropic, Google Cloud, Neon) nur aus Primärquellen mit URL und Abrufdatum; was dort nicht steht, als offen markieren.
+- Keine Rechtsberatung: Einordnungen als Einschätzung kennzeichnen.
+- Bezahlte Schritte (API-Läufe) vorher schätzen und freigeben lassen.
 
 ## Erwartete Artefakte
 - README.md nach Schema (Problem, PM-Entscheidung, Architektur, Eval, Kosten/Latenz, Learnings)
@@ -13,7 +24,7 @@
 
 ## Erlaubte Libraries
 - Direkt gegen das SDK, kein LangChain/LlamaIndex
-- [ggf. weitere Einschränkungen pro Use Case]
+- Skripte laufen mit dem Python aus `ai-uc-07-deployment/.venv` (importieren dessen Code)
 
 ## Stil
 - Python, einfache Skripte statt Frameworks

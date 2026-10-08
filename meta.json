@@ -1,7 +1,16 @@
 {
-  "title": "",
-  "status": "planned",
-  "tags": [],
-  "summary": "",
-  "metrics": []
+  "title": "AI Act & Data Protection for the Support Agent",
+  "status": "active",
+  "tags": [
+    "gdpr",
+    "ai-act",
+    "data-protection",
+    "decision-memo",
+    "agents"
+  ],
+  "summary": "A data flow inventory of the deployed UC7 support agent, as if real customer tickets went in tomorrow: every station with fields, region, retention and vendor role, backed by code lines and vendor primary sources.",
+  "metrics": [
+    "5 of 11 stations without an EU location commitment",
+    "Pseudonymisation would remove all 8 direct identifiers from the T01 agent request"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "title": "AI Act & Data Protection for the Support Agent",
-  "status": "active",
+  "status": "done",
   "tags": [
     "gdpr",
     "ai-act",
@@ -10,7 +10,7 @@
   ],
   "summary": "A decision and obligations memo for the UC7 support agent, as if real customer tickets went in tomorrow: data flow inventory, AI Act classification, GDPR review and an obligations backlog, backed by code lines and primary sources.",
   "metrics": [
-    "Limited risk: no prohibited practice, not high-risk, Art. 50 applies since 2 Aug 2026",
-    "28 obligations, 19 before go-live, 0 fulfilled today"
+    "Limited risk under the AI Act – but a DPIA is required",
+    "28 backlog items, 19 before go-live"
   ]
 }

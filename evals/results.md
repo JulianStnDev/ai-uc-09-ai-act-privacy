@@ -26,3 +26,8 @@ Keine API-Kosten. Ergebnis der Einstufung: begrenztes Risiko mit Transparenzpfli
 | Punkte „mit Legal klären“ | 4 (AI Act) + 7 (DSGVO) |
 
 Gezählt aus [docs/BACKLOG.md](../docs/BACKLOG.md).
+
+## Abschluss (2026-10-08)
+
+- Pseudonymisierung (B13) als Ausblick mit Messplan: frische Kontrolle gegen Branch, je 45 Läufe, Judge j2, geschätzt 4,31–4,86 USD, Freigabegrenze ca. 5,20 USD. **Nicht gelaufen.**
+- Gesamtkosten UC9: 0 USD.

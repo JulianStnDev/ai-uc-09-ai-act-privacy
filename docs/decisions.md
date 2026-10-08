@@ -53,3 +53,23 @@ Begründung: Eine Produktvorlage soll zeigen, was zu tun ist und wo eine Auslegu
 - **Selbst am Original geprüft** werden die tragenden Aussagen: Omnibus (Datum, Inkrafttreten 27.7.2026, Art. 4, Art. 113, Art. 111(4)), HGB §257 Abs. 4, DSK-Muss-Liste Nr. 11. Die übrigen Zitate stammen aus Recherche-Abrufen derselben Quellen und sind so gekennzeichnet.
 - **Entwürfe als Entwurf:** Die Leitlinien zu Art. 6 (Hochrisiko) gibt es nur als Entwurf vom 19.5.2026. Sie werden als Indiz zitiert, nicht als Beleg.
 - **Korrektur:** Buchungsbelege sind nach geltendem HGB/AO 8 Jahre aufzubewahren, nicht 10.
+
+## 2026-10-08: Pseudonymisierung (B13) als Ausblick, nicht gebaut
+
+Kontext: Die Pseudonymisierung würde alle direkten Identifikatoren aus der Anfrage an Anthropic nehmen und stützt das Transfer Impact Assessment. Sie ändert aber den Prompt und damit möglicherweise die Qualität.
+
+Entscheidung: Nur Design, Testansatz und Messplan im Backlog (`docs/BACKLOG.md`, Ausblick B13). Kein Code, kein bezahlter Lauf.
+
+- **Testansatz:** Die tatsächlich verschickte Anfrage wird über einen lokalen Stub hinter `ANTHROPIC_BASE_URL` abgefangen (Claude-Code-Doku, env-vars). Geprüft wird nicht die Konfiguration. Grund ist der SDK-Fund aus Schritt 1.
+- **Messplan:** frische Kontrolle auf `main` gegen den Branch, je 45 Läufe, Judge j2. Nachgerechnet: 4,31–4,86 USD. Die Vorgabe von ca. 5,20 USD liegt mit Puffer darüber und bleibt die Freigabegrenze.
+- **Hinweis zu j2:** j2 kennt „heute“ nicht (UC4). Das trifft beide Arme gleich. Für absolute Werte wäre j3 besser.
+
+## 2026-10-08: Abschluss UC9
+
+UC9 ist als Entscheidungsvorlage abgeschlossen (meta.json `done`). Kein Produktcode, Gesamtkosten 0 USD.
+
+Kennzahlen gegenüber dem Vorschlag nachgeschärft:
+- „a DPIA is mandatory in Germany“ wird zu „a DPIA is required“. Die Pflicht folgt aus der DSK-Muss-Liste Nr. 11 nach unserer Einschätzung, eine Frage dazu ist für Legal offen.
+- „28 obligations“ wird zu „28 backlog items“. Nicht jeder Eintrag ist eine Pflicht, einige sind Empfehlungen (z. B. B13, B27, B28).
+
+Offen bleiben die 11 Punkte „mit Legal klären“ und die Recherche-Lücken aus DATENFLUSS.md.

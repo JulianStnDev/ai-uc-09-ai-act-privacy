@@ -60,6 +60,8 @@ Beträge, Daten, Tarife und das Anliegen selbst. Das ist der Gegenstand der Aufg
 
 ## Wie man die Qualitätsfolgen messen würde (nicht ausgeführt)
 
+> Ersetzt durch den Messplan im [Backlog, Ausblick B13](BACKLOG.md#ausblick-b13-pseudonymisierung-vor-dem-modell): frische Kontrolle auf `main` gegen den Branch, Judge j2, ca. 5,20 USD. Die Schätzung unten (nur der Branch, Judge u2) bleibt als erster Stand stehen.
+
 Goldset mit pseudonymisiertem Prompt neu laufen lassen, 15 Tickets × 3 Läufe, Judge u2 auf allen Entwürfen.
 
 Schätzung nach der Regel „erst schätzen, dann laufen“:

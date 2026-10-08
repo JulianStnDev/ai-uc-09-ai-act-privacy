@@ -1,7 +1,7 @@
 # Projekt-Kontext
 
 ## Problem
-Entscheidungs- und Pflichtenvorlage, kein Produktcode: Was muss gelten, damit der UC7-Support-Agent ab morgen echte Kundentickets bearbeiten darf (DSGVO, später AI Act)? Erster Schritt: Datenfluss-Inventur ohne API (docs/DATENFLUSS.md, docs/DATENMINIMIERUNG.md). Die AI-Act-Einstufung kommt erst in einem späteren Schritt.
+Entscheidungs- und Pflichtenvorlage, kein Produktcode: Was muss gelten, damit der UC7-Support-Agent ab morgen echte Kundentickets bearbeiten darf (DSGVO, später AI Act)? Erster Schritt: Datenfluss-Inventur ohne API (docs/DATENFLUSS.md, docs/DATENMINIMIERUNG.md). Schritt 2/3: AI-Act-Einstufung (docs/AI_ACT.md), DSGVO-Prüfung (docs/DSGVO.md), Pflichten-Backlog (docs/BACKLOG.md).
 
 Datenquellen (Nachbar-Repos unter `~/dev`, nur lesen, nie ändern):
 - `ai-uc-07-deployment`: Code der Web-App und des Agents (`app/`, `uc4_agent/`), Aufzeichnung T01 (`app/replay/aufzeichnung.json`), Protokoll in Neon (`DATABASE_URL` aus dessen `.env`, nur Read-only-Transaktionen)
@@ -11,6 +11,7 @@ Datenquellen (Nachbar-Repos unter `~/dev`, nur lesen, nie ändern):
 Regeln:
 - Jede Aussage über den Code mit Datei und Zeile (Commit nennen).
 - Anbieterangaben (Anthropic, Google Cloud, Neon) nur aus Primärquellen mit URL und Abrufdatum; was dort nicht steht, als offen markieren.
+- Rechtsquellen nur primär: EUR-Lex, Kommission/AI Office, EDPB/WP29, DSK und Landesaufsichten, gesetze-im-internet.de. Unklare Auslegung als „mit Legal klären“ markieren, nicht entscheiden.
 - Keine Rechtsberatung: Einordnungen als Einschätzung kennzeichnen.
 - Bezahlte Schritte (API-Läufe) vorher schätzen und freigeben lassen.
 

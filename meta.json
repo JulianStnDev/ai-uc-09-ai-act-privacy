@@ -8,9 +8,9 @@
     "decision-memo",
     "agents"
   ],
-  "summary": "A data flow inventory of the deployed UC7 support agent, as if real customer tickets went in tomorrow: every station with fields, region, retention and vendor role, backed by code lines and vendor primary sources.",
+  "summary": "A decision and obligations memo for the UC7 support agent, as if real customer tickets went in tomorrow: data flow inventory, AI Act classification, GDPR review and an obligations backlog, backed by code lines and primary sources.",
   "metrics": [
-    "5 of 11 stations without an EU location commitment",
-    "Pseudonymisation would remove all 8 direct identifiers from the T01 agent request"
+    "Limited risk: no prohibited practice, not high-risk, Art. 50 applies since 2 Aug 2026",
+    "28 obligations, 19 before go-live, 0 fulfilled today"
   ]
 }
